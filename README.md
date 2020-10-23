@@ -11,7 +11,7 @@ Send the JSON (default) payload to a webhook:
 
 ```yml
     - name: Invoke deployment hook
-      uses: nha-supply/workflow-webhook@v1
+      uses: nha-supply/workflow-webhook@v2
       env:
         webhook_url: ${{ secrets.WEBHOOK_URL }}
         data: ${{ toJson(github.event) }}
